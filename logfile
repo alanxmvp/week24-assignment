@@ -1,0 +1,36 @@
+2019-09-09 21:51:01.666 +08 [5180] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-09 21:51:01.668 +08 [5180] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-09 21:51:02.283 +08 [17920] LOG:  database system was interrupted; last known up at 2019-09-09 07:15:26 +08
+2019-09-09 21:51:16.134 +08 [17920] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-09-09 21:51:16.141 +08 [17920] LOG:  invalid record length at 0/16F7D48: wanted 24, got 0
+2019-09-09 21:51:16.141 +08 [17920] LOG:  redo is not required
+2019-09-09 21:51:16.304 +08 [5180] LOG:  database system is ready to accept connections
+2019-09-09 22:02:26.637 +08 [19932] ERROR:  invalid input syntax for integer: " 0.28"
+2019-09-09 22:02:26.637 +08 [19932] CONTEXT:  COPY homes, line 2, column age: " 0.28"
+2019-09-09 22:02:26.637 +08 [19932] STATEMENT:  copy homes from STDIN CSV HEADER QUOTE '"'
+2019-09-09 22:24:04.641 +08 [6220] ERROR:  invalid input syntax for integer: ""Sell""
+2019-09-09 22:24:04.641 +08 [6220] CONTEXT:  COPY homes, line 1, column sell: ""Sell""
+2019-09-09 22:24:04.641 +08 [6220] STATEMENT:  COPY  homes ( sell,list,living,rooms,beds,baths,age,acres,taxes ) FROM STDIN DELIMITER ',';
+2019-09-09 22:25:23.742 +08 [6220] ERROR:  invalid input syntax for integer: "0.28"
+2019-09-09 22:25:23.742 +08 [6220] CONTEXT:  COPY homes, line 1, column acres: "0.28"
+2019-09-09 22:25:23.742 +08 [6220] STATEMENT:  COPY  homes ( sell,list,living,rooms,beds,baths,age,acres,taxes ) FROM STDIN DELIMITER ',';
+2019-09-09 22:30:05.891 +08 [6220] ERROR:  invalid input syntax for integer: "0.28"
+2019-09-09 22:30:05.891 +08 [6220] CONTEXT:  COPY homes, line 1, column acres: "0.28"
+2019-09-09 22:30:05.891 +08 [6220] STATEMENT:  COPY  homes ( "sell" , "list" , "living" , "rooms" , "beds" , "baths" , "age" , "acres" , "taxes" ) FROM STDIN DELIMITER ',' CSV;
+2019-09-09 22:46:17.187 +08 [6220] ERROR:  invalid input syntax for integer: "175,180,18,8,4,1,12,0.43,4033"
+2019-09-09 22:46:17.187 +08 [6220] CONTEXT:  COPY homes, line 2, column sell: "175,180,18,8,4,1,12,0.43,4033"
+2019-09-09 22:46:17.187 +08 [6220] STATEMENT:  COPY homes("sell","list","living","rooms","beds","baths","age","acres","taxes") FROM 'C:\Users\ALAN_TEOH\Desktop/homes.csv' WITH (FORMAT 'csv', DELIMITER E'\t', NULL '',HEADER);
+2019-09-09 22:46:46.244 +08 [6220] ERROR:  invalid input syntax for integer: " "
+2019-09-09 22:46:46.244 +08 [6220] CONTEXT:  COPY homes, line 51, column sell: " "
+2019-09-09 22:46:46.244 +08 [6220] STATEMENT:  COPY  homes ( "sell" , "list" , "living" , "rooms" , "beds" , "baths" , "age" , "acres" , "taxes" ) FROM STDIN DELIMITER ',' CSV;
+2019-09-09 22:52:10.749 +08 [19948] ERROR:  invalid input syntax for integer: "0.28"
+2019-09-09 22:52:10.749 +08 [19948] CONTEXT:  COPY homes, line 1, column age: "0.28"
+2019-09-09 22:52:10.749 +08 [19948] STATEMENT:  COPY  homes FROM STDIN DELIMITER ',' CSV;
+2019-09-09 22:52:24.980 +08 [19948] ERROR:  invalid input syntax for integer: "0.28"
+2019-09-09 22:52:24.980 +08 [19948] CONTEXT:  COPY homes, line 1, column age: "0.28"
+2019-09-09 22:52:24.980 +08 [19948] STATEMENT:  COPY  homes FROM STDIN DELIMITER ',' CSV;
+2019-09-09 22:53:16.567 +08 [19948] ERROR:  invalid input syntax for integer: " "
+2019-09-09 22:53:16.567 +08 [19948] CONTEXT:  COPY homes, line 51, column sell: " "
+2019-09-09 22:53:16.567 +08 [19948] STATEMENT:  COPY  homes FROM STDIN DELIMITER ',' CSV;
+2019-09-09 22:56:29.503 +08 [19948] ERROR:  syntax error at or near "selct" at character 1
+2019-09-09 22:56:29.503 +08 [19948] STATEMENT:  selct * from homes;

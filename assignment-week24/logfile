@@ -1,0 +1,4 @@
+2019-09-08 21:53:31.385 +08 [29356] FATAL:  lock file "postmaster.pid" already exists
+2019-09-08 21:53:31.385 +08 [29356] HINT:  Is another postmaster (PID 29016) running in data directory "C:/Users/ALAN_TEOH/scoop/apps/postgresql/current/data"?
+2019-09-08 21:53:58.224 +08 [25820] FATAL:  lock file "postmaster.pid" already exists
+2019-09-08 21:53:58.224 +08 [25820] HINT:  Is another postmaster (PID 29016) running in data directory "C:/Users/ALAN_TEOH/scoop/apps/postgresql/current/data"?

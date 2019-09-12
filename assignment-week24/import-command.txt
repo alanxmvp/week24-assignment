@@ -1,0 +1,3 @@
+psql -U postgres
+\c homes
+\COPY homes FROM 'C:\Users\ALAN_TEOH\Desktop/homes.csv' DELIMITER ',' CSV;
